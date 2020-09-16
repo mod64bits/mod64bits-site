@@ -12,12 +12,12 @@ env:
     - PIPENV_IGNORE_VETUALENVS=1
 install:
   - pip install pipenv
-  - pipenv sync
+  - pipenv sync --dev
  # - cp contrib/env-sample .env
 before_script:
   - psql -c "CREATE DATABASE testedb;" -U postgres
 script:
-  - pipenv run flake8 .
+#  - pipenv run flake8 .
   - pipenv run pytest
 after_success:
   - pipenv run codecov
