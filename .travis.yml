@@ -2,10 +2,6 @@ language: python
 dist: xenial
 python: 3.8
 sudo: true
-env:
-  global:
-    - PIPENV_VENV_IN_PROJECT=1
-    - PIPENV_IGNORE_VETUALENVS=1
 install:
   - pip install pipenv
   - pipenv sync --dev
