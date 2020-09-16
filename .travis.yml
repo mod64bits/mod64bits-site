@@ -1,10 +1,6 @@
 language: python
 dist: xenial
 python: 3.8
-services:
-  - postgresql
-addons:
-  postgresql: '9.5'
 sudo: true
 env:
   global:
