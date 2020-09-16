@@ -17,7 +17,7 @@ install:
 before_script:
   - psql -c "CREATE DATABASE testedb;" -U postgres
 script:
-  - pipenv run flake8 .
+ # - pipenv run flake8 .
 #  - pipenv run pytest --cov=modpro
 after_success:
   - pipenv run codecov
