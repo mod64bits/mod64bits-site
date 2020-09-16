@@ -13,8 +13,5 @@ env:
 install:
   - pip install pipenv
   - pipenv sync --dev
-#  - cp contrib/env-sample .env
-before_script:
-  - psql -c "CREATE DATABASE testedb;" -U postgres
 after_success:
   - pipenv run codecov
