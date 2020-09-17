@@ -11,6 +11,8 @@ pytest-cov = "*"
 [packages]
 django = "*"
 pytest-django = "*"
+python-decouple = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.8"

@@ -1,0 +1,3 @@
+DEBUG=False
+SECRET_KEY=SuaChaveSecreta
+DATABASE_URL=localhost://postgres:postgres@localhost/testedb
