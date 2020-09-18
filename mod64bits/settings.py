@@ -134,4 +134,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SENTRY_DSN = config('SENTRY_DSN', default=None)
 
 if SENTRY_DSN:
-    sentry_sdk.init(dsn=SENTRY_DSN, integrations=[DjangoIntegration()])
+    sentry_sdk.init(dsn='https://000a72d60650435db01c3741989f84a8@o442787.ingest.sentry.io/5432886',
+                    integrations=[DjangoIntegration()])
