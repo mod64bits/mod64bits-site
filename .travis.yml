@@ -16,9 +16,5 @@ install:
   - cp contrib/env-sample .env
 before_script:
   - psql -c "CREATE DATABASE testedb;" -U postgres
-script:
- # - pipenv run flake8 .
- # - pipenv run flake8 .
-  - pipenv run pytest --cov=apps
 after_success:
   - pipenv run codecov
