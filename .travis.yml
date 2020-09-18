@@ -19,6 +19,6 @@ before_script:
 script:
  # - pipenv run flake8 .
  # - pipenv run flake8 .
-   - pipenv run pytest --cov=apps
+ #  - pipenv run pytest --cov=apps
 after_success:
   - pipenv run codecov
