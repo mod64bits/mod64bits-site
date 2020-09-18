@@ -12,6 +12,7 @@ env:
     - PIPENV_IGNORE_VETUALENVS=1
 install:
   - pip install pipenv
+  - pipenv install pytest-cov
   - pipenv sync
   - cp contrib/env-sample .env
 before_script:
