@@ -5,7 +5,7 @@ from apps.base.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', include('apps.base.urls')),
 ]
 
 if settings.DEBUG:
