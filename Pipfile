@@ -9,6 +9,7 @@ install = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-django = "*"
+model-mommy = "*"
 
 [packages]
 python-decouple = "==3.3"
