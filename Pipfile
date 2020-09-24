@@ -3,13 +3,6 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-[dev-packages]
-flake8 = "*"
-install = "*"
-pytest = "*"
-pytest-cov = "*"
-pytest-django = "*"
-
 [packages]
 python-decouple = "==3.3"
 psycopg2 = "==2.8.6"
@@ -40,6 +33,14 @@ pytz = "==2020.1"
 sqlparse = "==0.3.1"
 toml = "==0.10.1"
 urllib3 = "==1.25.10"
+
+[dev-packages]
+flake8 = "*"
+install = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-django = "*"
+model-mommy = "*"
 
 [requires]
 python_version = "3.8"
